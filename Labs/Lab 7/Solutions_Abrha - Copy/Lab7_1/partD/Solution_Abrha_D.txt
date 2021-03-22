@@ -1,0 +1,3 @@
+Whenever the hashtable doesn't contain a specified object, it is added to the table. Howerver, if it exists its hascode value is altered by the setVisited method in the else condition of the removeDuplicates method in the EmployeeInfo class which leads new entry of object with the same hashcode as a previously added object to be treated as a new entry because the hashcode is previously altered.   
+In this case, the equals and hashCode methods are overriden,
+which seems very proper. So, we should not include such variable during the hashcode calculation. ( We should remove the setter method to make it immutable) or remove it from the calculation.

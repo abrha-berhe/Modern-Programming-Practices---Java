@@ -1,0 +1,12 @@
+The is containsKey method inside the removeDuplicates method of the EmployeeInfo class, returns true if there is an index(hash value) for the hashCode of the particular object. Howeve, when we say put(e,e) the key is "e" and its hashCode is assighned by the hashCode method in the Object class and is different for every object because each object has different memory address. if we want the object to have a fixed hashCode based on the salary and name, we need to override the hashcode() method of the Employee class as follows.
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + salary;
+		return result;
+	}
+
+ 

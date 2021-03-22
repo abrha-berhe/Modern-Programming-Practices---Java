@@ -1,0 +1,24 @@
+
+Assigned Bug Fixer: Tom Jones
+	Reported By:Corazza
+	Class Name:interface Lab10_01.javapackage.ClosedCurve
+	Description:
+	Severity:1
+
+	Reported By:Corazza
+	Class Name:class Lab10_01.javapackage.Circle
+	Description:computePerimeter incorrect
+	Severity:0
+
+
+Assigned Bug Fixer: Joe Smith
+	Reported By:Corazza
+	Class Name:class Lab10_01.javapackage.Rectangle
+	Description:computePerimeter incorrect
+	Severity:2
+
+	Reported By:Corazza
+	Class Name:class Lab10_01.javapackage.DataMiner
+	Description:Should use Logger
+	Severity:1
+

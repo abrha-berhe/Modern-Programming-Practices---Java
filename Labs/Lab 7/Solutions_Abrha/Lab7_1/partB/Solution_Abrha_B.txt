@@ -1,0 +1,8 @@
+We are using the contains method of the List class in our Employeeinfo class. This method returns true if and only if the list contains at least one element elt such that Objects.equals(o, elt) returns true. The equals method here is derived from the Object class. Literally, when we say l2.contains(e), we are searching if there is an element such that Objects.equals(e, elt) returns true. Here, "e" and "elt" are both type employee. Since we do not properly override(what we did is overloading) the equals method, the Object class has no idea to dynamically bind the "e" and "elt" to thier proper type. The reason why the result is false is then becuase the contains method is returning false due to the above reason. As a remedy, the equals method in the Employee class should be implemented as follows.
+
+	public boolean equals(Object e) {	 
+		if(e == null) return false;
+		if(this.getClass() != e.getClass()) return false;
+		Employee emp = (Employee) e;
+		return emp.name.equals(name) && emp.salary == salary;
+	}

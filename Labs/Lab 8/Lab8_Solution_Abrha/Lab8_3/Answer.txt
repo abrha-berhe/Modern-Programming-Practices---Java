@@ -1,0 +1,18 @@
+Answer to 
+-------------------
+
+Yes, the given expression can be expressed using the BiFunction 
+functional interface as follows:
+
+BiFunction<Double, Double, List<Double>> f = (x, y) -> {
+			List<Double> list =  new ArrayList<>();
+			list.add(Math.pow(x,  y));
+			list.add(x*y);
+
+			return list;
+		};
+		
+The function takes two parameters, and returns one parameter,
+in this case, a list.
+
+The test in the main method supports the same case.
